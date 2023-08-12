@@ -50,4 +50,26 @@ import './styles/style.css'
 // rootEl.insertAdjacentHTML('beforeend', frameworksEl);
 // rootEl.insertAdjacentHTML('beforeend', libEl);
 
+const form = document.querySelector('#form');
+const list = document.querySelector('.list');
 
+form.addEventListener('submit', getFormInputData);
+
+function getFormInputData(e) {
+   e.preventDefault();
+   const formData = form.question.value;
+   const markup = document.createElement('li');
+   markup.textContent = formData;
+   list.appendChild(markup);
+   const item = [];
+
+   const itemLi = JSON.parse(localStorage.getItem(item) || []);
+   item.push(formData);
+   item.push(itemLi);
+   addToLocalStorage(item);
+   form.requestFullscreen()
+}
+
+function addToLocalStorage(item) {
+   localStorage.setItem('toDoList', JSON.stringify(item));
+}
