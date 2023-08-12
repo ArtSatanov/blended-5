@@ -33,3 +33,21 @@
 
 
 import './styles/style.css'
+// import { base, list, frameworks, libs } from './data/hbsData'
+// import baseElement from './templates/base.hbs'
+// import listElement from './templates/list.hbs'
+// import frameworksElement from './templates/frameworks.hbs'
+// import libElement from './templates/libs.hbs'
+// const mainEl = baseElement(base);
+// const listEl = listElement(list);
+// const frameworksEl = frameworksElement(frameworks);
+// const libEl = libElement(libs);
+
+// const rootEl = document.querySelector("#root");
+
+// rootEl.insertAdjacentHTML('beforeend', mainEl);
+// rootEl.insertAdjacentHTML('beforeend', listEl);
+// rootEl.insertAdjacentHTML('beforeend', frameworksEl);
+// rootEl.insertAdjacentHTML('beforeend', libEl);
+
+
